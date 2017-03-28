@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>注册成功</title>
+    <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body>
+    <div class="login_successful">
+        <p>
+            <img src="images/successImg.png" alt=""/>
+        </p>
+        <p class="successText">注册成功</p>
+    </div>
+    <script>
+        //按照设计稿的标准比例，在根据当前屏幕的尺寸，动态的计算出当前页面的rem比例，保证在不同屏幕下的响应式开发
+        ~function(desW){
+            var winW=document.documentElement.clientWidth;
+            document.documentElement.style.fontSize=winW/desW*100+"px";
+        }(640);
+    </script>
+</body>
+</html>
